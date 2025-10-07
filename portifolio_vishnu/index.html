@@ -1,400 +1,647 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Vishnuteja Bikkina — Portfolio</title>
-  <meta name="description" content="Portfolio of Vishnuteja Bikkina — Data Science & Machine Learning" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <meta name="description" content="Portfolio of Vishnuteja Bikkina — Data Science & Machine Learning">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
-<body class="theme-dark">
-  <div class="page-bg" aria-hidden="true"></div>
+<body>
+  <!-- Animated Background -->
+  <div class="animated-bg">
+    <div class="bg-gradient"></div>
+    <div class="bg-gradient"></div>
+    <div class="bg-gradient"></div>
+  </div>
 
-  <header class="site-header">
-    <div class="container header-inner">
-      <div class="topbar">
-        <div class="logo">VISHNUTEJABIKKINA</div>
-        <nav class="nav" aria-label="Main navigation">
-          <a href="#summary">Summary</a>
-          <a href="#achievements">Achievements</a>
+  <!-- Header -->
+  <header id="header">
+    <div class="container">
+      <nav>
+        <div class="logo">VISHNUTEJA BIKKINA</div>
+        <div class="nav-links">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
           <a href="#skills">Skills</a>
           <a href="#experience">Experience</a>
           <a href="#projects">Projects</a>
           <a href="#education">Education</a>
           <a href="#contact">Contact</a>
-        </nav>
+        </div>
         <div class="header-actions">
-          <button id="modeToggle" class="icon-btn" aria-pressed="false" title="Toggle theme">🌙</button>
-          <a class="btn small" href="https://github.com/Vishnuteja156546/front-end/blob/main/portfolio_site/Vishnuteja_resume_.pdf" target="_blank" rel="noopener">View Resume</a>
-          <a class="btn small outline" href="https://github.com/Vishnuteja156546/front-end/raw/main/portfolio_site/Vishnuteja_resume_.pdf" download>Download</a>
+          <a href="https://github.com/Vishnuteja156546/front-end/blob/main/portfolio_site/Vishnuteja_resume_.pdf" target="_blank" class="btn btn-sm btn-primary">Resume</a>
         </div>
-      </div>
-
-      <div class="hero">
-        <div class="profile-pic-wrap" aria-hidden="true">
-          <img class="profile-pic" 
-            src="https://github.com/Vishnuteja156546/front-end/blob/main/portfolio_site/Vishn.jpeg?raw=true" 
-            alt="Vishnuteja Bikkina profile picture">
-        </div>
-
-        <div class="hero-text">
-          <h1>Hi — I'm <span class="name">Vishnuteja Bikkina</span></h1>
-          <p class="muted summary-line">Bangalore, India • +91-8139991104 • <a href="mailto:bvishnuteja.2004@gmail.com">bvishnuteja.2004@gmail.com</a></p>
-
-          <p class="muted links-row">
-            <a class="link" href="https://linkedin.com/in/vishnutejab" target="_blank" rel="noopener">LinkedIn</a>
-            <span aria-hidden="true"> • </span>
-            <a class="link" href="https://github.com/Vishnuteja156546" target="_blank" rel="noopener">GitHub</a>
-          </p>
-
-          <div class="hero-cta">
-            <a class="btn primary" href="https://github.com/Vishnuteja156546/front-end/blob/main/portfolio_site/Vishnuteja_resume_.pdf" target="_blank" rel="noopener">View Resume</a>
-            <a class="btn outline" href="https://github.com/Vishnuteja156546/front-end/raw/main/portfolio_site/Vishnuteja_resume_.pdf" download>Download</a>
-          </div>
-        </div>
-      </div>
+      </nav>
     </div>
   </header>
 
-  <main class="container main-grid">
-    <!-- LEFT column -->
-    <aside class="side-col" aria-label="Sidebar">
-      <section id="summary-card" class="card about">
-        <h2 class="card-title">Professional Summary</h2>
-        <p>
-          Data Science graduate (B.Tech, 2025) with expertise in Machine Learning, Deep Learning, Artificial Intelligence, and LLM integration. Built ML models (92% accuracy), automated ETL pipelines (25% faster), and developed AI-assisted AutoML solutions. Experienced across workflows from data collection and EDA to deployment. Seeking roles in Data Science, Machine Learning, AI, or Data Analytics.
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="container hero-container">
+      <div class="hero-content">
+        <h1 class="hero-title">Hi — I'm <span class="name">Vishnuteja Bikkina</span></h1>
+        <p class="hero-subtitle">Data Science Graduate | Machine Learning Engineer | AI Enthusiast</p>
+        <p class="hero-info">
+          📍 Bangalore, India • 📧 bvishnuteja.2004@gmail.com • 📱 +91-8139991104
         </p>
-
-        <ul class="keylist">
-          <li>Data Analysis & Mining</li>
-          <li>Machine Learning Models</li>
-          <li>Business Intelligence & Dashboards</li>
-          <li>Statistical Analysis & Hypothesis Testing</li>
-        </ul>
-
-        <div class="small-row contact-card">
-          <strong>Email:</strong> <a href="mailto:bvishnuteja.2004@gmail.com">bvishnuteja.2004@gmail.com</a><br>
-          <strong>Phone:</strong> +91-8139991104<br>
-          <strong>Location:</strong> Bangalore, India<br>
-          <strong>LinkedIn:</strong> <a href="https://linkedin.com/in/vishnutejab" target="_blank">linkedin.com/in/vishnutejab</a><br>
-          <strong>GitHub:</strong> <a href="https://github.com/Vishnuteja156546" target="_blank">github.com/Vishnuteja156546</a>
+        <p class="hero-links">
+          <a href="https://linkedin.com/in/vishnutejab" target="_blank">LinkedIn</a> • 
+          <a href="https://github.com/Vishnuteja156546" target="_blank">GitHub</a>
+        </p>
+        <div class="hero-cta">
+          <a href="https://github.com/Vishnuteja156546/front-end/blob/main/portfolio_site/Vishnuteja_resume_.pdf" target="_blank" class="btn btn-primary">View Resume</a>
+          <a href="https://github.com/Vishnuteja156546/front-end/raw/main/portfolio_site/Vishnuteja_resume_.pdf" download class="btn btn-outline">Download CV</a>
         </div>
-      </section>
-
-      <section id="achievements" class="card achievements">
-        <h3 class="card-title">Key Achievements</h3>
-        <div class="ach-grid">
-          <div class="ach"><strong>92%</strong><span>CNN Accuracy</span></div>
-          <div class="ach"><strong>30%</strong><span>EDA Automation</span></div>
-          <div class="ach"><strong>50%</strong><span>Faster Reporting</span></div>
-          <div class="ach"><strong>3+</strong><span>Internships</span></div>
-        </div>
-      </section>
-
-      <section class="card certs" id="certifications">
-        <h3 class="card-title">Education & Certifications</h3>
-        <p><strong>B.Tech in Computer Science (Data Science)</strong><br>Presidency University, Bangalore (2021–2025)</p>
-        <p><strong>Senior Secondary (12th, MPC)</strong> — Sri Chaitanya Junior College (2021)</p>
-        <p><strong>Secondary School Certificate (10th)</strong> — Sri Chaitanya Techno School (2019)</p>
-
-        <ul class="cert-list">
-          <li>Data Analytics — Microsoft (2025)</li>
-          <li>Machine Learning — SkillUp (2025)</li>
-          <li>Power BI — Simplilearn (2025)</li>
-          <li>Data Science — Udemy (2024)</li>
-        </ul>
-      </section>
-    </aside>
-
-    <!-- RIGHT column -->
-    <section class="content-col">
-      <!-- Professional Highlights -->
-      <section class="card highlights">
-        <h2 class="card-title">Professional Highlights</h2>
-        <div class="highlights-grid">
-          <div class="highlight"><strong>1M+</strong><span>Records pre Processed</span></div>
-          <div class="highlight"><strong>50%</strong><span>Reduced Model Training Time</span></div>
-          <div class="highlight"><strong>$500K+</strong><span>Business Value</span></div>
-        </div>
-      </section>
-
-      <section id="skills" class="card skills-card">
-  <h2 class="card-title">Technical Skills</h2>
-  <p class="muted">Proficiency across tools, languages, and frameworks</p>
-
-  <div class="skills-grid-3">
-    <!-- Languages & Databases -->
-    <div class="skill-block">
-      <h4 class="skill-title">Languages & Databases</h4>
-      <div class="skill-row"><span>Python</span><div class="bar"><div style="width:95%"></div></div><span>95%</span></div>
-      <div class="skill-row"><span>SQL</span><div class="bar"><div style="width:90%"></div></div><span>90%</span></div>
-      <div class="skill-row"><span>HTML</span><div class="bar"><div style="width:85%"></div></div><span>85%</span></div>
-      <div class="skill-row"><span>CSS</span><div class="bar"><div style="width:80%"></div></div><span>80%</span></div>
-      <div class="skill-row"><span>JavaScript</span><div class="bar"><div style="width:75%"></div></div><span>75%</span></div>
-    </div>
-
-    <!-- Data Analytics & Visualization -->
-    <div class="skill-block">
-      <h4 class="skill-title">Data Analytics & Visualization</h4>
-      <div class="skill-row"><span>Pandas</span><div class="bar"><div style="width:95%"></div></div><span>95%</span></div>
-      <div class="skill-row"><span>NumPy</span><div class="bar"><div style="width:90%"></div></div><span>90%</span></div>
-      <div class="skill-row"><span>Matplotlib</span><div class="bar"><div style="width:88%"></div></div><span>88%</span></div>
-      <div class="skill-row"><span>Seaborn</span><div class="bar"><div style="width:85%"></div></div><span>85%</span></div>
-      <div class="skill-row"><span>Power BI</span><div class="bar"><div style="width:90%"></div></div><span>90%</span></div>
-      <div class="skill-row"><span>Excel</span><div class="bar"><div style="width:92%"></div></div><span>92%</span></div>
-    </div>
-
-    <!-- Data Handling -->
-    <div class="skill-block">
-      <h4 class="skill-title">Data Handling</h4>
-      <div class="skill-row"><span>Data Cleaning</span><div class="bar"><div style="width:95%"></div></div><span>95%</span></div>
-      <div class="skill-row"><span>Data Transformation</span><div class="bar"><div style="width:90%"></div></div><span>90%</span></div>
-      <div class="skill-row"><span>Data Validation</span><div class="bar"><div style="width:88%"></div></div><span>88%</span></div>
-      <div class="skill-row"><span>Outlier Detection</span><div class="bar"><div style="width:85%"></div></div><span>85%</span></div>
-      <div class="skill-row"><span>Missing Value Treatment</span><div class="bar"><div style="width:90%"></div></div><span>90%</span></div>
-    </div>
-
-    <!-- Machine Learning -->
-    <div class="skill-block">
-      <h4 class="skill-title">Machine Learning</h4>
-      <div class="skill-row"><span>CNN</span><div class="bar"><div style="width:92%"></div></div><span>92%</span></div>
-      <div class="skill-row"><span>LSTM</span><div class="bar"><div style="width:85%"></div></div><span>85%</span></div>
-      <div class="skill-row"><span>Regression Models</span><div class="bar"><div style="width:88%"></div></div><span>88%</span></div>
-      <div class="skill-row"><span>Forecasting</span><div class="bar"><div style="width:85%"></div></div><span>85%</span></div>
-      <div class="skill-row"><span>Scikit-learn</span><div class="bar"><div style="width:90%"></div></div><span>90%</span></div>
-      <div class="skill-row"><span>TensorFlow</span><div class="bar"><div style="width:88%"></div></div><span>88%</span></div>
-    </div>
-
-    <!-- Tools & Platforms -->
-    <div class="skill-block">
-      <h4 class="skill-title">Tools & Platforms</h4>
-      <div class="skill-row"><span>Jupyter Notebook</span><div class="bar"><div style="width:95%"></div></div><span>95%</span></div>
-      <div class="skill-row"><span>VS Code</span><div class="bar"><div style="width:90%"></div></div><span>90%</span></div>
-      <div class="skill-row"><span>MySQL</span><div class="bar"><div style="width:85%"></div></div><span>85%</span></div>
-      <div class="skill-row"><span>MS Office</span><div class="bar"><div style="width:92%"></div></div><span>92%</span></div>
-    </div>
-
-    <!-- Soft Skills -->
-    <div class="skill-block">
-      <h4 class="skill-title">Soft Skills</h4>
-      <div class="skill-row"><span>Problem Solving</span><div class="bar"><div style="width:95%"></div></div><span>95%</span></div>
-      <div class="skill-row"><span>Critical Thinking</span><div class="bar"><div style="width:90%"></div></div><span>90%</span></div>
-      <div class="skill-row"><span>Collaboration</span><div class="bar"><div style="width:88%"></div></div><span>88%</span></div>
-      <div class="skill-row"><span>Communication</span><div class="bar"><div style="width:85%"></div></div><span>85%</span></div>
-      <div class="skill-row"><span>Project Management</span><div class="bar"><div style="width:80%"></div></div><span>80%</span></div>
-    </div>
-  </div>
-</section>
-
-
-      <!-- Experience (timeline style) -->
-      <section id="experience" class="card">
-        <h2 class="card-title">Professional Experience</h2>
-
-        <div class="timeline">
-          <div class="exp">
-            <div class="exp-head">
-              <h3>Data Analyst Intern — NullClass</h3>
-              <div class="exp-meta">Jan 2025 – Mar 2025</div>
-            </div>
-            <div class="exp-body">
-              <ul>
-                <li>Processed 25,000+ records using Python/SQL; automated ETL workflows reducing preprocessing time by 25%.</li>
-                <li>Designed Power BI dashboards for KPI monitoring; improved stakeholder decision-making speed by 40%.</li>
-                <li>Built validation scripts detecting 150+ anomalies per dataset, improving model reliability by 20%.</li>
-              </ul>
-              <p class="muted">Technologies: Python, SQL, Power BI, Pandas, NumPy</p>
-            </div>
-          </div>
-
-          <div class="exp">
-            <div class="exp-head">
-              <h3>Machine Learning Intern — InternPe</h3>
-              <div class="exp-meta">Sept 2024 – Nov 2024</div>
-            </div>
-            <div class="exp-body">
-              <ul>
-                <li>Developed regression pipelines for car price forecasting on 5,000+ records; improved accuracy by 18% via feature engineering and cross-validation.</li>
-                <li>Conducted EDA on 10,000+ records, identifying 5 key pricing factors; delivered insights via visualizations.</li>
-              </ul>
-              <p class="muted">Technologies: Python, Scikit-learn, Matplotlib, Seaborn</p>
-            </div>
-          </div>
-        </div>
-      </section>
-<!-- Projects -->
-<section id="projects" class="card">
-  <h2 class="card-title">Featured Projects</h2>
-
-  <div class="projects-grid">
-    <!-- AutoML Copilot -->
-    <article class="project">
-      <img class="project-media"
-           src="https://raw.githubusercontent.com/Vishnuteja156546/front-end/main/portfolio_site/Selected%20photo.jpeg"
-           aria-hidden="true"
-           alt="AutoML">
-      <div class="project-body">
-        <h4>AutoML Copilot — AI Data Science Assistant</h4>
-        <p>Python, Streamlit, PyCaret, LangChain, Groq API, SHAP</p>
-        <ul>
-          <li>Built AutoML processing 30,000+ rows; reduced manual EDA and model training time by 40%.</li>
-          <li>Integrated LLM (Groq API) to generate 500+ dataset insights and recommendations.</li>
-        </ul>
-        <div class="proj-actions">
-          <a class="btn outline" href="https://github.com/Vishnuteja156546/Data_Science/tree/main/projects/AutoML%20Copilot" target="_blank" rel="noopener">View Project</a>
-        </div>
-      </div>
-    </article>
-
-    <!-- Crop Disease Detection -->
-    <article class="project">
-      <img class="project-media"
-           src="https://raw.githubusercontent.com/Vishnuteja156546/front-end/main/portfolio_site/Selected%20photo%20(1).jpeg"
-           aria-hidden="true"
-           alt="Crop Disease">
-      <div class="project-body">
-        <h4>Crop Disease Detection (CNN)</h4>
-        <p>Python, TensorFlow, Keras, OpenCV, CNN</p>
-        <ul>
-          <li>Trained on 5,000+ labeled crop images achieving 92% accuracy (F1: 0.91).</li>
-          <li>Preprocessing, augmentation, Grad-CAM explainability and Streamlit demo.</li>
-        </ul>
-        <div class="proj-actions">
-          <a class="btn outline" href="https://github.com/Vishnuteja156546/Data_Science/tree/main/projects/crowd_sourcing_of_plant_Disease" target="_blank" rel="noopener">View Project</a>
-        </div>
-      </div>
-    </article>
-
-    <!-- House Price Prediction -->
-    <article class="project">
-      <img class="project-media"
-           src="https://raw.githubusercontent.com/Vishnuteja156546/front-end/main/portfolio_site/Selected%20photo%20(2).jpeg"
-           aria-hidden="true"
-           alt="House Prediction">
-      <div class="project-body">
-        <h4>House Price Prediction</h4>
-        <p>Regression pipeline — feature engineering, ensembles and SHAP explainability</p>
-        <ul>
-          <li>Regression models with robust feature engineering and cross-validation.</li>
-          <li>SHAP used to explain model predictions and support stakeholder decisions.</li>
-        </ul>
-        <div class="proj-actions">
-          <a class="btn outline" href="https://github.com/Vishnuteja156546/Data_Science/tree/main/projects/netflix_titles.csv" target="_blank" rel="noopener">
-            View Project (House Price) →
+        <div class="social-links">
+          <a href="https://linkedin.com/in/vishnutejab" target="_blank" title="LinkedIn">
+            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+          </a>
+          <a href="https://github.com/Vishnuteja156546" target="_blank" title="GitHub">
+            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          </a>
+          <a href="mailto:bvishnuteja.2004@gmail.com" title="Email">
+            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M0 3v18h24v-18h-24zm6.623 7.929l-4.623 5.712v-9.458l4.623 3.746zm-4.141-5.929h19.035l-9.517 7.713-9.518-7.713zm5.694 7.188l3.824 3.099 3.83-3.104 5.612 6.817h-18.779l5.513-6.812zm9.208-1.264l4.616-3.741v9.348l-4.616-5.607z"/></svg>
           </a>
         </div>
       </div>
-    </article>
-
-    <!-- Stock Price Prediction -->
-    <article class="project">
-      <img class="project-media"
-           src="https://raw.githubusercontent.com/Vishnuteja156546/front-end/main/portfolio_site/Selected%20photo%20(3).jpeg"
-           aria-hidden="true"
-           alt="Stock Prediction">
-      <div class="project-body">
-        <h4>Stock Price Prediction (FB Prophet)</h4>
-        <p>Time-series forecasting, backtesting and short-term trend analysis</p>
-        <ul>
-          <li>Preprocessing, sequence features, Prophet modeling and backtesting.</li>
-          <li>Evaluation metrics & visualization for trading signal analysis.</li>
-        </ul>
-        <div class="proj-actions">
-          <a class="btn outline" href="https://github.com/Vishnuteja156546/Data_Science/tree/main/projects/Stock%20Price%20Prediction%20with%20FB%20Prophet%20Model" target="_blank" rel="noopener">
-            View Project (Stock) →
-          </a>
-        </div>
+      <div class="hero-image">
+        <img src="https://github.com/Vishnuteja156546/front-end/blob/main/portfolio_site/Vishn.jpeg?raw=true" alt="Vishnuteja Bikkina" class="profile-pic">
       </div>
-    </article>
-  </div>
-</section>
+    </div>
+  </section>
 
-
-
-
-      <!-- Achievements (detailed) -->
-      <section class="card">
-        <h2 class="card-title">Achievements & Impact</h2>
-        <ul>
-          <li>Automated EDA workflows reducing analysis time by 40%.</li>
-          <li>Built integrated reporting pipeline (Excel, SQL, Power BI) improving efficiency by 30%.</li>
-          <li>Designed validation frameworks improving data quality and model accuracy by 20%.</li>
-        </ul>
-      </section>
-
-      <!-- Education & Certifications (detailed) -->
-      <section class="card">
-        <h2 class="card-title">Education & Certifications — Details</h2>
-        <div class="edu-grid">
-          <div class="edu">
-            <h4>B.Tech in Computer Science (Data Science)</h4>
-            <p>Presidency University, Bangalore — 2021–2025 (In Progress)</p>
-            <p>Specialized in Data Science and Machine Learning. Hands-on experience with real-world projects and multiple internships.</p>
-          </div>
-
-          <div class="certs-list">
-            <h4>Certifications</h4>
-            <ul>
-              <li>Data Analytics — Microsoft (2025)</li>
-              <li>Machine Learning — SkillUp (2025)</li>
-              <li>Power BI — Simplilearn (2025)</li>
-              <li>Data Science — Udemy (2024)</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <!-- Contact -->
-<section id="contact" class="card contact-card">
-  <h2 class="card-title">Get in Touch</h2>
-  <p class="muted">Want to collaborate, hire, or just say hello? Use the form or my contact info below.</p>
-
-  <div class="contact-grid">
-    <!-- Contact Form -->
-    <form class="contact-form" action="mailto:bvishnuteja.2004@gmail.com" method="post" enctype="text/plain">
-      <div class="form-group">
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" required placeholder="Enter your name">
+  <!-- Stats Bar -->
+  <div class="container">
+    <div class="stats fade-in">
+      <div class="stat-item">
+        <div class="stat-value">92%</div>
+        <div class="stat-label">CNN Accuracy</div>
       </div>
-      <div class="form-group">
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" required placeholder="Enter your email">
+      <div class="stat-item">
+        <div class="stat-value">1M+</div>
+        <div class="stat-label">Records Processed</div>
       </div>
-      <div class="form-group">
-        <label for="message">Message</label>
-        <textarea id="message" name="message" rows="4" required placeholder="Write your message"></textarea>
+      <div class="stat-item">
+        <div class="stat-value">50%</div>
+        <div class="stat-label">Faster Reporting</div>
       </div>
-      <button type="submit" class="btn primary">Send Message</button>
-    </form>
-
-    <!-- Contact Info -->
-    <div class="contact-info">
-      <a class="contact-item" href="tel:+918139991104">
-        <span>📞</span> +91-8139991104
-      </a>
-      <a class="contact-item" href="mailto:bvishnuteja.2004@gmail.com">
-        <span>✉️</span> bvishnuteja.2004@gmail.com
-      </a>
-      <a class="contact-item" href="https://linkedin.com/in/vishnutejab" target="_blank" rel="noopener">
-        <span>💼</span> linkedin.com/in/vishnutejab
-      </a>
-      <a class="contact-item" href="https://github.com/Vishnuteja156546" target="_blank" rel="noopener">
-        <span>🐙</span> github.com/Vishnuteja156546
-      </a>
-      <div class="contact-item">
-        <span>📍</span> Bangalore, India
+      <div class="stat-item">
+        <div class="stat-value">4+</div>
+        <div class="stat-label">Internships</div>
       </div>
     </div>
   </div>
-</section>
 
-    </section>
-  </main>
+  <!-- Professional Summary -->
+  <section id="about" class="container fade-in">
+    <div class="summary-card">
+      <h2 class="section-title">Professional Summary</h2>
+      <p class="summary-text">
+        Data Science graduate (B.Tech, 2025) with expertise in Machine Learning, Deep Learning, Artificial Intelligence, and LLM integration. Built ML models (92% accuracy), automated ETL pipelines (25% faster), and developed AI-assisted AutoML solutions. Experienced across workflows from data collection and EDA to deployment. Seeking roles in Data Science, Machine Learning, AI, or Data Analytics.
+      </p>
+      <div class="key-areas">
+        <div class="key-area-item">📊 Data Analysis & Mining</div>
+        <div class="key-area-item">🤖 Machine Learning Models</div>
+        <div class="key-area-item">📈 Business Intelligence & Dashboards</div>
+        <div class="key-area-item">📉 Statistical Analysis & Hypothesis Testing</div>
+      </div>
+    </div>
+  </section>
 
-  <footer class="site-footer">
+  <!-- Skills Section -->
+  <section id="skills" class="container">
+    <h2 class="section-title fade-in">Technical Skills</h2>
+    <div class="skills-grid">
+      <!-- Languages & Databases -->
+      <div class="skill-card fade-in">
+        <h3>Languages & Databases</h3>
+        <div class="skill-item">
+          <div class="skill-info"><span>Python</span><span>95%</span></div>
+          <div class="skill-bar"><div class="skill-progress" data-width="95"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-info"><span>SQL</span><span>90%</span></div>
+          <div class="skill-bar"><div class="skill-progress" data-width="90"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-info"><span>HTML</span><span>85%</span></div>
+          <div class="skill-bar"><div class="skill-progress" data-width="85"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-info"><span>CSS</span><span>80%</span></div>
+          <div class="skill-bar"><div class="skill-progress" data-width="80"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-info"><span>JavaScript</span><span>75%</span></div>
+          <div class="skill-bar"><div class="skill-progress" data-width="75"></div></div>
+        </div>
+      </div>
+
+      <!-- Data Analytics & Visualization -->
+      <div class="skill-card fade-in">
+        <h3>Data Analytics & Visualization</h3>
+        <div class="skill-item">
+          <div class="skill-info"><span>Pandas</span><span>95%</span></div>
+          <div class="skill-bar"><div class="skill-progress" data-width="95"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-info"><span>NumPy</span><span>90%</span></div>
+          <div class="skill-bar"><div class="skill-progress" data-width="90"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-info"><span>Power BI</span><span>90%</span></div>
+          <div class="skill-bar"><div class="skill-progress" data-width="90"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-info"><span>Excel</span><span>92%</span></div>
+          <div class="skill-bar"><div class="skill-progress" data-width="92"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-info"><span>Matplotlib</span><span>88%</span></div>
+          <div class="skill-bar"><div class="skill-progress" data-width="88"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-info"><span>Seaborn</span><span>85%</span></div>
+          <div class="skill-bar"><div class="skill-progress" data-width="85"></div></div>
+        </div>
+      </div>
+
+      <!-- Data Handling -->
+      <div class="skill-card fade-in">
+        <h3>Data Handling</h3>
+        <div class="skill-item">
+          <div class="skill-info"><span>Data Cleaning</span><span>95%</span></div>
+          <div class="skill-bar"><div class="skill-progress" data-width="95"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-info"><span>Data Transformation</span><span>90%</span></div>
+          <div class="skill-bar"><div class="skill-progress" data-width="90"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-info"><span>Data Validation</span><span>88%</span></div>
+          <div class="skill-bar"><div class="skill-progress" data-width="88"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-info"><span>Outlier Detection</span><span>85%</span></div>
+          <div class="skill-bar"><div class="skill-progress" data-width="85"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-info"><span>Missing Value Treatment</span><span>90%</span></div>
+          <div class="skill-bar"><div class="skill-progress" data-width="90"></div></div>
+        </div>
+      </div>
+
+      <!-- Machine Learning -->
+      <div class="skill-card fade-in">
+        <h3>Machine Learning</h3>
+        <div class="skill-item">
+          <div class="skill-info"><span>CNN</span><span>92%</span></div>
+          <div class="skill-bar"><div class="skill-progress" data-width="92"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-info"><span>LSTM</span><span>85%</span></div>
+          <div class="skill-bar"><div class="skill-progress" data-width="85"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-info"><span>Regression Models</span><span>88%</span></div>
+          <div class="skill-bar"><div class="skill-progress" data-width="88"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-info"><span>Forecasting</span><span>85%</span></div>
+          <div class="skill-bar"><div class="skill-progress" data-width="85"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-info"><span>Scikit-learn</span><span>90%</span></div>
+          <div class="skill-bar"><div class="skill-progress" data-width="90"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-info"><span>TensorFlow</span><span>88%</span></div>
+          <div class="skill-bar"><div class="skill-progress" data-width="88"></div></div>
+        </div>
+      </div>
+
+      <!-- Tools & Platforms -->
+      <div class="skill-card fade-in">
+        <h3>Tools & Platforms</h3>
+        <div class="skill-item">
+          <div class="skill-info"><span>Jupyter Notebook</span><span>95%</span></div>
+          <div class="skill-bar"><div class="skill-progress" data-width="95"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-info"><span>VS Code</span><span>90%</span></div>
+          <div class="skill-bar"><div class="skill-progress" data-width="90"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-info"><span>MySQL</span><span>85%</span></div>
+          <div class="skill-bar"><div class="skill-progress" data-width="85"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-info"><span>MS Office</span><span>92%</span></div>
+          <div class="skill-bar"><div class="skill-progress" data-width="92"></div></div>
+        </div>
+      </div>
+
+      <!-- Soft Skills -->
+      <div class="skill-card fade-in">
+        <h3>Soft Skills</h3>
+        <div class="skill-item">
+          <div class="skill-info"><span>Problem Solving</span><span>95%</span></div>
+          <div class="skill-bar"><div class="skill-progress" data-width="95"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-info"><span>Critical Thinking</span><span>90%</span></div>
+          <div class="skill-bar"><div class="skill-progress" data-width="90"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-info"><span>Collaboration</span><span>88%</span></div>
+          <div class="skill-bar"><div class="skill-progress" data-width="88"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-info"><span>Communication</span><span>85%</span></div>
+          <div class="skill-bar"><div class="skill-progress" data-width="85"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-info"><span>Project Management</span><span>80%</span></div>
+          <div class="skill-bar"><div class="skill-progress" data-width="80"></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="container">
+    <h2 class="section-title fade-in">Professional Experience</h2>
+    <div class="timeline">
+      <!-- Skyllx Internship -->
+      <div class="timeline-item fade-in">
+        <div class="timeline-header">
+          <div>
+            <h3>Data Analyst Intern — Skyllx</h3>
+            <p class="company-type">Training cum Internship</p>
+          </div>
+          <div class="timeline-date">Apr 2025 – Sep 2025</div>
+        </div>
+        <ul>
+          <li>Working on advanced data analytics and machine learning projects with real-world datasets</li>
+          <li>Developing data-driven solutions and creating interactive dashboards for business insights</li>
+          <li>Collaborating with cross-functional teams on data science initiatives and model deployment</li>
+          <li>Implementing ETL pipelines and data validation frameworks for data quality assurance</li>
+          <li>Conducting comprehensive exploratory data analysis and statistical modeling</li>
+        </ul>
+        <div class="tech-tags">
+          <span class="tech-tag">Python</span>
+          <span class="tech-tag">SQL</span>
+          <span class="tech-tag">Power BI</span>
+          <span class="tech-tag">Machine Learning</span>
+          <span class="tech-tag">Data Analytics</span>
+        </div>
+      </div>
+
+      <!-- NullClass Internship -->
+      <div class="timeline-item fade-in">
+        <div class="timeline-header">
+          <div>
+            <h3>Data Analyst Intern — NullClass</h3>
+          </div>
+          <div class="timeline-date">Jan 2025 – Mar 2025</div>
+        </div>
+        <ul>
+          <li>Processed 25,000+ records using Python/SQL; automated ETL workflows reducing preprocessing time by 25%</li>
+          <li>Designed Power BI dashboards for KPI monitoring; improved stakeholder decision-making speed by 40%</li>
+          <li>Built validation scripts detecting 150+ anomalies per dataset, improving model reliability by 20%</li>
+        </ul>
+        <div class="tech-tags">
+          <span class="tech-tag">Python</span>
+          <span class="tech-tag">SQL</span>
+          <span class="tech-tag">Power BI</span>
+          <span class="tech-tag">Pandas</span>
+          <span class="tech-tag">NumPy</span>
+        </div>
+      </div>
+
+      <!-- InternPe Internship -->
+      <div class="timeline-item fade-in">
+        <div class="timeline-header">
+          <div>
+            <h3>Machine Learning Intern — InternPe</h3>
+          </div>
+          <div class="timeline-date">Sep 2024 – Nov 2024</div>
+        </div>
+        <ul>
+          <li>Developed regression pipelines for car price forecasting on 5,000+ records; improved accuracy by 18% via feature engineering and cross-validation</li>
+          <li>Conducted EDA on 10,000+ records, identifying 5 key pricing factors; delivered insights via visualizations</li>
+        </ul>
+        <div class="tech-tags">
+          <span class="tech-tag">Python</span>
+          <span class="tech-tag">Scikit-learn</span>
+          <span class="tech-tag">Matplotlib</span>
+          <span class="tech-tag">Seaborn</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="container">
+    <h2 class="section-title fade-in">Featured Projects</h2>
+    <div class="projects-grid">
+      <!-- AutoML Copilot -->
+      <div class="project-card fade-in">
+        <div class="project-image-wrapper">
+          <img src="https://raw.githubusercontent.com/Vishnuteja156546/Vishnuteja_portfolio/main/portifolio_vishnu/1000138843.png" alt="AutoML Copilot" class="project-image">
+        </div>
+        <div class="project-content">
+          <h3>AutoML Copilot — AI Data Science Assistant</h3>
+          <p class="project-tech">Python, Streamlit, PyCaret, LangChain, Groq API, SHAP</p>
+          <ul>
+            <li>Built AutoML processing 30,000+ rows; reduced manual EDA and model training time by 40%</li>
+            <li>Integrated LLM (Groq API) to generate 500+ dataset insights and recommendations</li>
+            <li>Automated feature engineering, model selection, and hyperparameter tuning workflows</li>
+          </ul>
+          <div class="tech-tags">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">Streamlit</span>
+            <span class="tech-tag">PyCaret</span>
+            <span class="tech-tag">LangChain</span>
+            <span class="tech-tag">Groq API</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/Vishnuteja156546/Data_Science/tree/main/projects/AutoML%20Copilot" target="_blank" class="btn btn-outline">View Project →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Crop Disease Detection -->
+      <div class="project-card fade-in">
+        <div class="project-image-wrapper">
+          <img src="https://raw.githubusercontent.com/Vishnuteja156546/Vishnuteja_portfolio/main/portifolio_vishnu/1000138844.jpg" alt="Crop Disease Detection" class="project-image">
+        </div>
+        <div class="project-content">
+          <h3>Crop Disease Detection (CNN)</h3>
+          <p class="project-tech">Python, TensorFlow, Keras, OpenCV, CNN</p>
+          <ul>
+            <li>Trained on 5,000+ labeled crop images achieving 92% accuracy (F1: 0.91)</li>
+            <li>Implemented preprocessing, data augmentation, and Grad-CAM explainability</li>
+            <li>Deployed interactive Streamlit demo for real-time disease detection</li>
+          </ul>
+          <div class="tech-tags">
+            <span class="tech-tag">TensorFlow</span>
+            <span class="tech-tag">Keras</span>
+            <span class="tech-tag">OpenCV</span>
+            <span class="tech-tag">CNN</span>
+            <span class="tech-tag">Streamlit</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/Vishnuteja156546/Data_Science/tree/main/projects/crowd_sourcing_of_plant_Disease" target="_blank" class="btn btn-outline">View Project →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- House Price Prediction -->
+      <div class="project-card fade-in">
+        <div class="project-image-wrapper">
+          <img src="https://raw.githubusercontent.com/Vishnuteja156546/Vishnuteja_portfolio/main/portifolio_vishnu/1000138845.jpg" alt="House Price Prediction" class="project-image">
+        </div>
+        <div class="project-content">
+          <h3>House Price Prediction</h3>
+          <p class="project-tech">Regression Pipeline — Feature Engineering, Ensembles, SHAP</p>
+          <ul>
+            <li>Developed regression models with robust feature engineering and cross-validation</li>
+            <li>SHAP used to explain model predictions and support stakeholder decisions</li>
+            <li>Ensemble methods combining multiple algorithms for improved accuracy</li>
+          </ul>
+          <div class="tech-tags">
+            <span class="tech-tag">Scikit-learn</span>
+            <span class="tech-tag">SHAP</span>
+            <span class="tech-tag">Pandas</span>
+            <span class="tech-tag">XGBoost</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/Vishnuteja156546/Data_Science/tree/main/projects/netflix_titles.csv" target="_blank" class="btn btn-outline">View Project →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Stock Price Prediction -->
+      <div class="project-card fade-in">
+        <div class="project-image-wrapper">
+          <img src="https://raw.githubusercontent.com/Vishnuteja156546/Vishnuteja_portfolio/main/portifolio_vishnu/%231.png" alt="Stock Price Prediction" class="project-image">
+        </div>
+        <div class="project-content">
+          <h3>Stock Price Prediction (FB Prophet)</h3>
+          <p class="project-tech">Time-Series Forecasting, Backtesting, Trend Analysis</p>
+          <ul>
+            <li>Implemented preprocessing, sequence features, Prophet modeling and backtesting</li>
+            <li>Evaluation metrics & visualization for trading signal analysis</li>
+            <li>Short-term trend prediction with confidence intervals</li>
+          </ul>
+          <div class="tech-tags">
+            <span class="tech-tag">Prophet</span>
+            <span class="tech-tag">Time Series</span>
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">Pandas</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/Vishnuteja156546/Data_Science/tree/main/projects/Stock%20Price%20Prediction%20with%20FB%20Prophet%20Model" target="_blank" class="btn btn-outline">View Project →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education & Certifications -->
+  <section id="education" class="container">
+    <h2 class="section-title fade-in">Education & Certifications</h2>
+    <div class="education-grid">
+      <!-- Education -->
+      <div class="education-card fade-in">
+        <h3>Education</h3>
+        <div class="edu-item">
+          <h4>B.Tech in Computer Science (Data Science)</h4>
+          <p class="edu-place">Presidency University, Bangalore</p>
+          <p class="edu-date">2021 – 2025 (Expected)</p>
+          <p class="edu-desc">Specialized in Data Science and Machine Learning with hands-on experience in real-world projects and multiple internships.</p>
+        </div>
+        <div class="edu-item">
+          <h4>Senior Secondary (12th, MPC)</h4>
+          <p class="edu-place">Sri Chaitanya Junior College</p>
+          <p class="edu-date">2021</p>
+        </div>
+        <div class="edu-item">
+          <h4>Secondary School Certificate (10th)</h4>
+          <p class="edu-place">Sri Chaitanya Techno School</p>
+          <p class="edu-date">2019</p>
+        </div>
+      </div>
+
+      <!-- Certifications -->
+      <div class="education-card fade-in">
+        <h3>Certifications</h3>
+        <div class="cert-item">
+          <h4>Data Analytics</h4>
+          <p class="cert-org">Microsoft</p>
+          <p class="cert-date">2025</p>
+        </div>
+        <div class="cert-item">
+          <h4>Machine Learning</h4>
+          <p class="cert-org">SkillUp</p>
+          <p class="cert-date">2025</p>
+        </div>
+        <div class="cert-item">
+          <h4>Power BI</h4>
+          <p class="cert-org">Simplilearn</p>
+          <p class="cert-date">2025</p>
+        </div>
+        <div class="cert-item">
+          <h4>Data Science</h4>
+          <p class="cert-org">Udemy</p>
+          <p class="cert-date">2024</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Achievements -->
+  <section class="container">
+    <h2 class="section-title fade-in">Key Achievements & Impact</h2>
+    <div class="achievements-grid">
+      <div class="achievement-card fade-in">
+        <div class="achievement-icon">🏆</div>
+        <h4>Automated EDA Workflows</h4>
+        <p>Reduced analysis time by 40% through automated exploratory data analysis pipelines</p>
+      </div>
+      <div class="achievement-card fade-in">
+        <div class="achievement-icon">📊</div>
+        <h4>Integrated Reporting Pipeline</h4>
+        <p>Built Excel, SQL, and Power BI integration improving efficiency by 30%</p>
+      </div>
+      <div class="achievement-card fade-in">
+        <div class="achievement-icon">✅</div>
+        <h4>Data Validation Framework</h4>
+        <p>Designed frameworks improving data quality and model accuracy by 20%</p>
+      </div>
+      <div class="achievement-card fade-in">
+        <div class="achievement-icon">💼</div>
+        <h4>Business Value Delivered</h4>
+        <p>Generated $500K+ in business value through data-driven solutions</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Professional Highlights -->
+  <section class="container">
+    <div class="highlights-banner fade-in">
+      <h2 class="section-title">Professional Highlights</h2>
+      <div class="highlights-grid">
+        <div class="highlight-item">
+          <div class="highlight-value">1M+</div>
+          <div class="highlight-label">Records Preprocessed</div>
+        </div>
+        <div class="highlight-item">
+          <div class="highlight-value">50%</div>
+          <div class="highlight-label">Reduced Model Training Time</div>
+        </div>
+        <div class="highlight-item">
+          <div class="highlight-value">$500K+</div>
+          <div class="highlight-label">Business Value Generated</div>
+        </div>
+        <div class="highlight-item">
+          <div class="highlight-value">30%</div>
+          <div class="highlight-label">EDA Automation Improvement</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="container">
+    <h2 class="section-title fade-in">Get in Touch</h2>
+    <p class="contact-subtitle fade-in">Want to collaborate, hire, or just say hello? Reach out to me!</p>
+    <div class="contact-grid">
+      <!-- Contact Form -->
+      <div class="contact-form-wrapper fade-in">
+        <h3>Send a Message</h3>
+        <form class="contact-form" action="mailto:bvishnuteja.2004@gmail.com" method="post" enctype="text/plain">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required placeholder="Your name">
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required placeholder="Your message here..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+        </form>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="contact-info fade-in">
+        <h3>Contact Information</h3>
+        <a href="tel:+918139991104" class="contact-item">
+          <div class="contact-icon">
+            <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M20 10.999h2C22 5.869 18.127 2 12.99 2v2C17.052 4 20 6.943 20 10.999z"/><path d="M13 8c2.103 0 3 .897 3 3h2c0-3.225-1.775-5-5-5v2zm3.422 5.443a1.001 1.001 0 0 0-1.391.043l-2.393 2.461c-.576-.11-1.734-.471-2.926-1.66-1.192-1.193-1.553-2.354-1.66-2.926l2.459-2.394a1 1 0 0 0 .043-1.391L6.859 3.513a1 1 0 0 0-1.391-.087l-2.17 1.861a1 1 0 0 0-.29.649c-.015.25-.301 6.172 4.291 10.766C11.305 20.707 16.323 21 17.705 21c.202 0 .326-.006.359-.008a.992.992 0 0 0 .648-.291l1.86-2.171a.997.997 0 0 0-.086-1.391l-4.064-3.696z"/></svg>
+          </div>
+          <div>
+            <strong>Phone</strong>
+            <p>+91-8139991104</p>
+          </div>
+        </a>
+        <a href="mailto:bvishnuteja.2004@gmail.com" class="contact-item">
+          <div class="contact-icon">
+            <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M20 4H4c-1.103 0-2 .897-2 2v12c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2zm0 2v.511l-8 6.223-8-6.222V6h16zM4 18V9.044l7.386 5.745a.994.994 0 0 0 1.228 0L20 9.044 20.002 18H4z"/></svg>
+          </div>
+          <div>
+            <strong>Email</strong>
+            <p>bvishnuteja.2004@gmail.com</p>
+          </div>
+        </a>
+        <a href="https://linkedin.com/in/vishnutejab" target="_blank" class="contact-item">
+          <div class="contact-icon">
+            <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M20 3H4a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1zM8.339 18.337H5.667v-8.59h2.672v8.59zM7.003 8.574a1.548 1.548 0 1 1 0-3.096 1.548 1.548 0 0 1 0 3.096zm11.335 9.763h-2.669V14.16c0-.996-.018-2.277-1.388-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248h-2.667v-8.59h2.56v1.174h.037c.355-.675 1.227-1.387 2.524-1.387 2.704 0 3.203 1.778 3.203 4.092v4.71z"/></svg>
+          </div>
+          <div>
+            <strong>LinkedIn</strong>
+            <p>linkedin.com/in/vishnutejab</p>
+          </div>
+        </a>
+        <a href="https://github.com/Vishnuteja156546" target="_blank" class="contact-item">
+          <div class="contact-icon">
+            <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.17 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0 1 12 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.167 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+          </div>
+          <div>
+            <strong>GitHub</strong>
+            <p>github.com/Vishnuteja156546</p>
+          </div>
+        </a>
+        <div class="contact-item">
+          <div class="contact-icon">
+            <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+          </div>
+          <div>
+            <strong>Location</strong>
+            <p>Bangalore, India</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
     <div class="container">
-      <p class="muted">© 2025 VISHNUTEJABIKKINA — Built with HTML, CSS & JS</p>
+      <p>© 2025 Vishnuteja Bikkina — Built with passion for Data Science & Machine Learning</p>
+      <p class="footer-subtitle">Designed with HTML, CSS & JavaScript</p>
+      <div class="footer-links">
+        <a href="https://linkedin.com/in/vishnutejab" target="_blank">LinkedIn</a>
+        <a href="https://github.com/Vishnuteja156546" target="_blank">GitHub</a>
+        <a href="mailto:bvishnuteja.2004@gmail.com">Email</a>
+      </div>
     </div>
   </footer>
 
